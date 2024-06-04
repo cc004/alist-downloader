@@ -37,9 +37,9 @@ class AlistClient:
                     json=obj,
                     timeout=10
                 )
-                obj = await resp.json()
-                assert obj['code'] == 200
-                return obj['data']
+                obj0 = await resp.json()
+                assert obj0['code'] == 200
+                return obj0['data']
             except:
                 pass
             finally:
